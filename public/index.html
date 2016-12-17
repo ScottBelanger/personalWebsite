@@ -7,7 +7,15 @@
         <link rel="stylesheet" type="text/css" href="/styles/index.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="/js/navbarHandler.js"></script>
-        
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+        <script>
+        $( function() {
+            $( ".draggable" ).draggable({
+                containment: 'parent'
+            });
+        } );
+        </script>
         
     </head>
 <body>
@@ -94,10 +102,10 @@
                     <div class="col-sm-1">
                     </div>
                     <div class="col-sm-3">
-                        <div class='octagonWrap'>
-                        <p class="verticalCenter" style="font-size:25px">See my Travel Map!</p>
+                        <div class='octagonWrap draggable'>
+                            <p class="verticalCenter" style="font-size:25px">See my Travel Map!</p>
                             <a href="interactiveMap.html" >
-                                <div class='octagon' style="padding-top:10%">
+                                <div class='octagon' style="padding-top:10%;">
                                 </div>
                             </a>
                         </div>
@@ -109,7 +117,7 @@
                     <div class="col-sm-1">
                     </div>
                     <div class="col-sm-3">
-                        <div class='octagonWrap'>
+                        <div class='octagonWrap draggable'>
                         <p class="verticalCenter" style="font-size:25px">Programming Background</p>
                             <a href="programmingBackground.html" >
                                 <div class='octagon'>
@@ -122,7 +130,7 @@
             <div class=" container-fluid" style="color:white; position:relative;">
                 <div class="row" >
                     <div class="col-sm-2">
-                        <div class='octagonWrap' style="font-size:25px; margin-right:1%">
+                        <div class='octagonWrap' style="font-size:25px;">
                             <p class="verticalCenter">About me & Contact Information</p>
                             <a href="aboutMe.html" >
                                 <div class='octagon'>
@@ -177,7 +185,7 @@
                 <div class="row">
                     <div class="col-sm-4">
                     </div>
-                    <div class="col-sm-4" style="text-align:center">
+                    <div class="col-sm-6" style="text-align:center">
                         <h1 style="font-size:50px">
                             About Me
                         </h1>
