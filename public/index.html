@@ -5,14 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="/styles/index.css">
+        <link rel="stylesheet" type="text/css" href="/styles/hexagons.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="/js/navbarHandler.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Mirza' rel='stylesheet' type='text/css'>
+
   
         <script>
         $( function() {
             $( ".draggable" ).draggable({
-                containment: 'parent'
             });
         } );
         </script>
@@ -20,35 +22,35 @@
     </head>
 <body>
     
-    <nav id="navbar" class="navbar navbar-fixed-top" style="position:absolute;">
+    <nav id="navbar" class="navbar navbar-fixed-top" style="position:absolute; display:none">
         <div class="container-fluid" style="text-align:center; padding:2%; background: linear-gradient(white, transparent); color:black;">
             <div class="row">
-                <div class="col-sm-5" style="font-size: 25px;">
+                <div class="col-sm-5" style="font-size: 2.5vw;">
                     <div class="row" style="text-align:center">
                         <div class="col-sm-4">
-                            <a href="interactiveMap.html" style="color:black; decoration:none" data-toggle="tooltip" title="Where I've Travelled and Photos"><span class="glyphicon glyphicon-globe" style="font-size:30px;"></span></a>
+                            <a href="interactiveMap" style="color:black; decoration:none" data-toggle="tooltip" title="Where I've Travelled and Photos"><span class="glyphicon glyphicon-globe"></span></a>
                         </div>
                         <div class="col-sm-4">
-                            <a href="myPhotos.html" style="color:black; decoration:none" data-toggle="tooltip" title="Check out Photos I've Taken"><span class="glyphicon glyphicon-camera" style="font-size:30px;"></span></a>
+                            <a href="myPhotos" style="color:black; decoration:none" data-toggle="tooltip" title="Check out Photos I've Taken"><span class="glyphicon glyphicon-camera"></span></a>
                         </div>
                         <div class="col-sm-4">
-                            <a href="aboutMe.html" style="color:black; decoration:none" data-toggle="tooltip" title="Learn More About Me"><span class="glyphicon glyphicon-user" style="font-size:30px;"></span></a>
+                            <a href="aboutMe" style="color:black; decoration:none" data-toggle="tooltip" title="Learn More About Me"><span class="glyphicon glyphicon-user"></span></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-2" style="font-size: 50px;">
-                    <a href="index.html" style="color:black; decoration:none" data-toggle="tooltip" title="Go Home!"><span class="glyphicon glyphicon-home"></span></a>
+                <div class="col-sm-2" style="font-size: 3.5vw;">
+                    <a href="index" style="color:black; decoration:none" data-toggle="tooltip" title="Go Home!"><span class="glyphicon glyphicon-home"></span></a>
                 </div>
-                <div class="col-sm-5" style="font-size: 25px;">
+                <div class="col-sm-5" style="font-size: 2.5vw;">
                     <div class="row" style="text-align:center">
                         <div class="col-sm-4">
-                            <a href="myEducation.html" style="color:black; decoration:none" data-toggle="tooltip" title="My Education"><span class="glyphicon glyphicon-education" style="font-size:30px;"></span></a>
+                            <a href="myEducation" style="color:black; decoration:none" data-toggle="tooltip" title="My Education"><span class="glyphicon glyphicon-education"></span></a>
                         </div>
                         <div class="col-sm-4">
-                            <a href="myHobbies.html" style="color:black; decoration:none" data-toggle="tooltip" title="My Hobbies"><span class="glyphicon glyphicon-headphones" style="font-size:30px;"></span></a>
+                            <a href="myHobbies" style="color:black; decoration:none" data-toggle="tooltip" title="My Hobbies"><span class="glyphicon glyphicon-headphones" ></span></a>
                         </div>
                         <div class="col-sm-4">
-                            <a href="programmingBackground.html" style="color:black; decoration:none" data-toggle="tooltip" title="What do I Know About Programming?"><span class="glyphicon glyphicon-pencil" style="font-size:30px;"></span></a>
+                            <a href="programmingBackground" style="color:black; decoration:none" data-toggle="tooltip" title="What do I Know About Programming?"><span class="glyphicon glyphicon-pencil"></span></a>
                         </div>
                     </div>
                 </div>
@@ -59,32 +61,32 @@
     <nav id="navbarSolid" class="navbar navbar-fixed-top" style="position:fixed;">
         <div class="container-fluid" style="text-align:center; padding:2%; background: linear-gradient(black, transparent); color:white;">
             <div class="row">
-                <div class="col-sm-5" style="font-size: 25px;">
+                <div class="col-sm-5" style="font-size: 2.5vw;">
                     <div class="row" style="text-align:center">
                         <div class="col-sm-4">
-                            <a href="interactiveMap.html" style="color:white; decoration:none" data-toggle="tooltip" title="Where I've Travelled and Photos"><span class="glyphicon glyphicon-globe" style="font-size:30px;"></span></a>
+                            <a href="interactiveMap" style="color:white; decoration:none" data-toggle="tooltip" title="Where I've Travelled and Photos"><span class="glyphicon glyphicon-globe"></span></a>
                         </div>
                         <div class="col-sm-4">
-                            <a href="myPhotos.html" style="color:white; decoration:none" data-toggle="tooltip" title="Check out Photos I've Taken"><span class="glyphicon glyphicon-camera" style="font-size:30px;"></span></a>
+                            <a href="myPhotos" style="color:white; decoration:none" data-toggle="tooltip" title="Check out Photos I've Taken"><span class="glyphicon glyphicon-camera"></span></a>
                         </div>
                         <div class="col-sm-4">
-                            <a href="aboutMe.html" style="color:white; decoration:none" data-toggle="tooltip" title="Learn More About Me"><span class="glyphicon glyphicon-user" style="font-size:30px;"></span></a>
+                            <a href="aboutMe" style="color:white; decoration:none" data-toggle="tooltip" title="Learn More About Me"><span class="glyphicon glyphicon-user"></span></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-2" style="font-size: 50px;">
-                    <a href="index.html" style="color:white; decoration:none" data-toggle="tooltip" title="Go Home!"><span class="glyphicon glyphicon-home"></span></a>
+                <div class="col-sm-2" style="font-size: 3.5vw;">
+                    <a href="index" style="color:white; decoration:none" data-toggle="tooltip" title="Go Home!"><span class="glyphicon glyphicon-home"></span></a>
                 </div>
-                <div class="col-sm-5" style="font-size: 25px;">
+                <div class="col-sm-5" style="font-size: 2.5vw;">
                     <div class="row" style="text-align:center">
                         <div class="col-sm-4">
-                            <a href="myEducation.html" style="color:white; decoration:none" data-toggle="tooltip" title="My Education"><span class="glyphicon glyphicon-education" style="font-size:30px;"></span></a>
+                            <a href="myEducation" style="color:white; decoration:none" data-toggle="tooltip" title="My Education"><span class="glyphicon glyphicon-education"></span></a>
                         </div>
                         <div class="col-sm-4">
-                            <a href="myHobbies.html" style="color:white; decoration:none" data-toggle="tooltip" title="My Hobbies"><span class="glyphicon glyphicon-headphones" style="font-size:30px;"></span></a>
+                            <a href="myHobbies" style="color:white; decoration:none" data-toggle="tooltip" title="My Hobbies"><span class="glyphicon glyphicon-headphones"></span></a>
                         </div>
                         <div class="col-sm-4">
-                            <a href="programmingBackground.html" style="color:white; decoration:none" data-toggle="tooltip" title="What do I Know About Programming?"><span class="glyphicon glyphicon-pencil" style="font-size:30px;"></span></a>
+                            <a href="programmingBackground" style="color:white; decoration:none" data-toggle="tooltip" title="What do I Know About Programming?"><span class="glyphicon glyphicon-pencil"></span></a>
                         </div>
                     </div>
                 </div>
@@ -94,99 +96,79 @@
     
     <div class="container-fluid" id="backgroundImage" style="height:100%; text-align:center">
         
-        <div class="parallax" style="background-size:100%;">
+        <div class="parallax" style="background-size:cover;">
         </div>
-        <div class=" container-fluid" style="text-align:center; color:white; padding-top:19%; position:relative; overflow:auto; line-height:1;">
-            <div class=" container-fluid" style="text-align:center; position:relative; overflow:auto; line-height:1; margin-bottom:-9%">
-                <div class="row">
-                    <div class="col-sm-1">
-                    </div>
-                    <div class="col-sm-3">
-                        <div class='octagonWrap draggable'>
-                            <p class="verticalCenter" style="font-size:25px">See my Travel Map!</p>
-                            <a href="interactiveMap.html" >
-                                <div class='octagon' style="padding-top:10%;">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4" style="text-align:center; margin-right:-1%;margin-left:-1%">
-                        <h1 style="font-size:80px">Scott</h1>
-                        <h1 style="font-size:80px">Belanger</h1>
-                    </div>
-                    <div class="col-sm-1">
-                    </div>
-                    <div class="col-sm-3">
-                        <div class='octagonWrap draggable'>
-                        <p class="verticalCenter" style="font-size:25px">Programming Background</p>
-                            <a href="programmingBackground.html" >
-                                <div class='octagon'>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        
+        <div class="row" style="text-align:center; color:white; padding-top:6%; padding-bottom:10%;">
+            <div class="col-sm-6" style="padding-top:6%; ">
+                <h1 style="font-size:8vw; font-family:Mirza">SCOTT</h1>
+                <h1 style="font-size:8vw; font-family:Mirza">BELANGER</h1>
             </div>
-            <div class=" container-fluid" style="color:white; position:relative;">
-                <div class="row" >
-                    <div class="col-sm-2">
-                        <div class='octagonWrap' style="font-size:25px;">
-                            <p class="verticalCenter">About me & Contact Information</p>
-                            <a href="aboutMe.html" >
-                                <div class='octagon'>
-                                </div>
+            <div class="col-sm-6">
+                <div class=" container-fluid" style="padding-top:6%; padding-bottom:10%;">
+                    <ul id="hexGrid">
+                        <li class="hex">
+                            <a class="hexIn" href="interactiveMap">
+                                <img src="" class="glyphicon glyphicon-globe" style="font-size:7vw; color:white; padding-top:35%"/>
+                                <h1 style="font-size:2vw; color:black;">Interactive</h1>
+                                <p style="font-size:2vw; color:black;">Map</p>
                             </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-7">
-                        <div class="col-sm-4">
-                            <div class='octagonWrap' >
-                                <p class="verticalCenter" style="font-size:25px">My Education</p>
-                                <a href="myEducation.html" >
-                                    <div class='octagon'>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                        </div>
-                        <div class="col-sm-2">
-                        </div>
-                        <div class="col-sm-3">
-                            <div class='octagonWrap' >
-                                <p class="verticalCenter" style="font-size:25px">Check out my Photos</p>
-                                <a href="myPhotos.html" >
-                                    <div class='octagon'>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-1">
-                    </div>
-                    <div class="col-sm-2">
-                        <div class='octagonWrap' >
-                            <p class="verticalCenter" style="font-size:25px">Download My Resume!</p>
-                            <a href="/resources/scottbelanger-resume.pdf" download>
-                                <div class='octagon'>
-                                </div>
+                        </li>
+                        <li class="hex">
+                            <a class="hexIn" href="myPhotos">
+                                <img src="" class="glyphicon glyphicon-camera" style="font-size:7vw; color:white; padding-top:35%"/>
+                                <h1 style="font-size:2vw; color:black;">My</h1>
+                                <p style="font-size:2vw; color:black;">Photos</p>
                             </a>
-                        </div>
-                    </div>
+                        </li>
+                        <li class="hex">
+                            <a class="hexIn" href="aboutMe">
+                                <img src="" class="glyphicon glyphicon-user" style="font-size:7vw; color:white; padding-top:35%"/>
+                                <h1 style="font-size:2vw; color:black;">Learn More</h1>
+                                <p style="font-size:2vw; color:black;">About Me</p>
+                            </a>
+                        </li>
+                        <li class="hex">
+                            <a class="hexIn" href="/resources/scottbelanger-resume.pdf" >
+                                <img src="" class="glyphicon glyphicon-file" style="font-size:7vw; color:white; padding-top:35%"/>
+                                <h1 style="font-size:2vw; color:black;">My</h1>
+                                <p style="font-size:2vw; color:black;">Resume</p>
+                            </a>
+                        </li>
+                        <li class="hex">
+                            <a class="hexIn" href="myEducation">
+                                <img src="" class="glyphicon glyphicon-education" style="font-size:7vw; color:white; padding-top:35%"/>
+                                <h1 style="font-size:2vw; color:black;">My</h1>
+                                <p style="font-size:2vw; color:black;">Education</p>
+                            </a>
+                        </li>
+                        <li class="hex">
+                            <a class="hexIn" href="myHobbies">
+                                <img src="" class="glyphicon glyphicon-headphones" style="font-size:7vw; color:white; padding-top:35%"/>
+                                <h1 style="font-size:2vw; color:black;">My</h1>
+                                <p style="font-size:2vw; color:black;">Hobbies</p>
+                            </a>
+                        </li>
+                        <li class="hex">
+                            <a class="hexIn" href="programmingBackground">
+                                <img src="" class="glyphicon glyphicon-pencil" style="font-size:7vw; color:white; padding-top:35%"/>
+                                <h1 style="font-size:2vw; color:black;">Programming</h1>
+                                <p style="font-size:2vw; color:black;">Background</p>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
     
-    
-    
-    <div class="container-fluid" id="aboutus" style="height:120%;background-color:white; overflow:auto;">
-            <div class=" container-fluid" style="text-align:center; padding-top:8%; color:black; position:relative; overflow:auto; line-height:1;">
+    <div class="container-fluid" id="aboutus" style="height:auto;background-color:white; padding-top:10%; padding-bottom:7%; ">
+            <div class=" container-fluid" style="text-align:center; color:black; position:relative; overflow:auto; line-height:1;">
                 <div class="row">
                     <div class="col-sm-4">
                     </div>
                     <div class="col-sm-6" style="text-align:center">
-                        <h1 style="font-size:50px">
+                        <h1 style="font-size:4vw">
                             About Me
                         </h1>
                         <hr style="border: solid 2px black">
@@ -198,10 +180,10 @@
             <div class=" container-fluid" style="text-align:center; color:black; position:relative; padding-top:3%; width:100%">
                 <div class="row">
                     <div class="col-sm-4">
-                        <div id="circle" style="background-image: url('/images/profilePic.jpg')">
+                        <div id="circle" style="background-image: url('/images/profilePic.jpg'); background-size:cover">
                         </div>
                     </div>
-                    <div class="col-sm-6" style="font-size:23px">
+                    <div class="col-sm-6" style="font-size:2vw">
                         <p>Hi! I'm Scott, a recent graduate from The University of Western Ontario. I graduated
                         with a Bachelor of Engineering Science in Software Engineering with Professional Internship. </p>
                         <p>I am highly passionate towards front-end development and software architecture. In the next 5 to 10
@@ -216,7 +198,7 @@
     </div>
     
     <div id="wrap">
-        <div id="main" class="container-fluid clear-top" style="text-align:center; font-size:30px; background-color:#2FB8FC ;color:white; padding:4%">
+        <div id="main" class="container-fluid clear-top" style="text-align:center;background-color:#2FB8FC ;color:white; padding:4%">
             <div class=" container-fluid" style="text-align:center; color:black; position:relative; overflow:auto; line-height:1;">
                 <div class="row">
                     <div class="col-sm-4">
