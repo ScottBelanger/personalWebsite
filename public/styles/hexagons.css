@@ -1,7 +1,7 @@
 /* Hexagons */
 #hexGrid {
   overflow: hidden;
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
   padding: 0.866% 0;
   font-size: 15px;
@@ -59,7 +59,7 @@
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.8);
   font-weight: 300;
-  transition: transform .2s ease-out, opacity .3s ease-out;
+  transition: transform .3s ease-out, opacity .8s ease-out;
 }
 
 .hex h1 {
