@@ -99,11 +99,11 @@
                 <div class="container-fluid" style="height:8vw; background:#474747; color:white;">
                     <ul style="list-style:none; padding:1%;text-align:center;">
                         <a onClick="rotateLeft()"><div class="glyphicon glyphicon-chevron-left" style="float:left; font-size:2vw;"></div></a>
-                        <a href=""><li class="thumbnailPhoto"><img id="thumb1"/></li></a>
-                        <a href=""><li class="thumbnailPhoto"><img id="thumb2"/></li></a>
-                        <a href=""><li class="thumbnailPhoto" id="focused" style="border:1px solid white"><img id="thumb3"/></li></a>
-                        <a href=""><li class="thumbnailPhoto"><img id="thumb4"/></li></a>
-                        <a href=""><li class="thumbnailPhoto"><img id="thumb5"/></li></a>
+                        <a onClick="reFocus(-2)"><li class="thumbnailPhoto"><img id="thumb1"/></li></a>
+                        <a onClick="reFocus(-1)"><li class="thumbnailPhoto"><img id="thumb2"/></li></a>
+                        <a onClick="reFocus(0)"><li class="thumbnailPhoto" id="focused" style="border:1px solid white"><img id="thumb3"/></li></a>
+                        <a onClick="reFocus(1)"><li class="thumbnailPhoto"><img id="thumb4"/></li></a>
+                        <a onClick="reFocus(2)"><li class="thumbnailPhoto"><img id="thumb5"/></li></a>
                         <a onClick="rotateRight()"><div class="glyphicon glyphicon-chevron-right" style="float:right; font-size:2vw"></div></a>
                     </ul>
                 </div>

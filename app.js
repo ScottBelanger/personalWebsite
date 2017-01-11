@@ -6,5 +6,5 @@ app.use(express.static(__dirname + '/public', {
 }));
 
 app.listen(8080, function () {
-  console.log('Example app listening on port 3000!')
+  console.log('Welcome, please navigate to localhost on port 8080!')
 })

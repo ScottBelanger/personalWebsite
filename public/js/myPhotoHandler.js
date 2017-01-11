@@ -1,5 +1,6 @@
 //Array to hold all of the names of the cities for each photo
-var thumbnailPhotos = ["vienna", "salzburg", "brussels", "mostar", "dubrovnik", "plitvice", "paris"];
+var thumbnailPhotos = ["vienna", "salzburg", "brussels", "mostar", "dubrovnik", "plitvice", "paris", "prague", "london",
+                       "munich", "santorini", "iceland", "kotor", "swissalps", "positano", "chiangmai", "halongbay"];
 
 //Dictionary to store the information with unique key of city name
 var photoInfo = {};
@@ -21,6 +22,16 @@ function loadInfo() {
     photoInfo["dubrovnik"] = "The fully walled city of old town Dubrovnik";
     photoInfo["plitvice"] = "Plitvice Lakes Croatia";
     photoInfo["paris"] = "The Eiffel tower in Paris, France";
+    photoInfo["prague"] = "The Charles Bridge in Prague, Czech Republic";
+    photoInfo["london"] = "Big Ben in London, England";
+    photoInfo["munich"] = "2016 Oktoberfest in Munich, Germany";
+    photoInfo["santorini"] = "A beautiful sunset in Oia, Greece on Santorini island";
+    photoInfo["iceland"] = "Solheimajokull glacier in Iceland";
+    photoInfo["kotor"] = "The Bay of Kotor in Montenegro";
+    photoInfo["swissalps"] = "View of the Swiss Alps from Kleine Scheidegg, Switzerland";
+    photoInfo["positano"] = "The town of Positano, part of the Amalfi Coast in Italy";
+    photoInfo["chiangmai"] = "Elephant Sanctuary in Chiang Mai, Thailand";
+    photoInfo["halongbay"] = "Ha Long Bay in Vietnam";
     
     document.getElementById("thumb1").src = "/images/myPhotosPage/" + thumbnailPhotos[0] + ".jpg";
     document.getElementById("thumb2").src = "/images/myPhotosPage/" + thumbnailPhotos[1] + ".jpg";
@@ -92,4 +103,25 @@ function rotate() {
             document.getElementById("thumb5").src = "/images/myPhotosPage/" + thumbnailPhotos[focused+2] + ".jpg";
         }
     }
+}
+
+function reFocus(offSet) {
+    switch(focused += offSet) {
+        case -2:
+            focused = thumbnailPhotos.length-2;
+            break;
+        case -1:
+            focused = thumbnailPhotos.length-1;
+            break;
+        case 0:
+            break;
+        case thumbnailPhotos.length:
+            focused = 0;
+            break;
+        case (thumbnailPhotos.length+1):
+            focused = 1;
+            break;
+    }
+    
+    rotate();
 }
