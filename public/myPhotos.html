@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="/styles/index.css">
+        <script src="/js/myPhotoHandler.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Mirza' rel='stylesheet' type='text/css'>
         
@@ -15,9 +16,17 @@
             p {
                 font-size:2vw;
             }
-            img {
-                height:10vw;
-                width:12vw;
+            .thumbnailPhoto {
+                height:18%;
+                width:18%;
+            }
+            li {
+                float:left;
+                padding:1%;
+            }
+            a {
+                text-decoration:none;
+                color:white;
             }
         </style>
     </head>
@@ -76,8 +85,33 @@
         </div>
     </div>
     
-    <div class="container-fluid" style="height:auto; text-align:center; background:white; position:relative; font-family:Mirza; padding-bottom:10%; padding-top:5%">
-             
+    <div class="container-fluid" style="padding-top:5%; padding-bottom:5%; background:grey; ">
+        <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-8">
+                <div class="container-fluid" style="height:35vw;">
+                    <img id="mainPhoto" src="" style="background-repeat:no-repeat; background-size:cover"/>
+                </div>
+                <div class="container-fluid" style="height:5vw; width:100%; background:black; color:white">
+                    <p id="photoInfo">Vienna</p>
+                </div>
+                <div class="container-fluid" style="height:8vw; background:#474747; color:white;">
+                    <ul style="list-style:none; padding:1%;text-align:center;">
+                        <a onClick="rotateLeft()"><div class="glyphicon glyphicon-chevron-left" style="float:left; font-size:2vw;"></div></a>
+                        <a href=""><li class="thumbnailPhoto"><img id="thumb1"/></li></a>
+                        <a href=""><li class="thumbnailPhoto"><img id="thumb2"/></li></a>
+                        <a href=""><li class="thumbnailPhoto" id="focused" style="border:1px solid white"><img id="thumb3"/></li></a>
+                        <a href=""><li class="thumbnailPhoto"><img id="thumb4"/></li></a>
+                        <a href=""><li class="thumbnailPhoto"><img id="thumb5"/></li></a>
+                        <a onClick="rotateRight()"><div class="glyphicon glyphicon-chevron-right" style="float:right; font-size:2vw"></div></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-2">
+            </div>
+        </div>
+        
     </div>
 
     <div id="wrap">
@@ -87,13 +121,13 @@
                     <div class="col-sm-3">
                     </div>
                     <div class="col-sm-2">
-                        <a href="https://ca.linkedin.com/in/scott-belanger-384b9565" target="_blank"><img src="/images/linkedIn.png"></a>
+                        <a href="https://ca.linkedin.com/in/scott-belanger-384b9565" target="_blank"><img style="height:10vw; width:12vw;" src="/images/linkedIn.png"></a>
                     </div>
                     <div class="col-sm-2">
-                        <a href="https://github.com/ScottBelanger/personalWebsite/" target="_blank"><img src="/images/github.png"></a>
+                        <a href="https://github.com/ScottBelanger/personalWebsite/" target="_blank"><img style="height:10vw; width:12vw;" src="/images/github.png"></a>
                     </div>
                     <div class="col-sm-2">
-                        <a href="https://twitter.com/scottcbelanger" target="_blank"><img src="/images/twitter.png"></a>
+                        <a href="https://twitter.com/scottcbelanger" target="_blank"><img style="height:10vw; width:12vw;" src="/images/twitter.png"></a>
                     </div>
                     <div class="col-sm-3">
                     </div>
